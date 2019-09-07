@@ -207,8 +207,8 @@ a {
     width: 90%;
     max-width: 600px;
     padding: 40px;
-    border: 10px solid lightgray;
-    border-radius: 10px; 
+    border: 4px solid #2989F7;
+    border-radius: 30px; 
     display: none;
 }
 
@@ -230,7 +230,7 @@ a {
 
 #popup-box input {
     padding: 10px;
-    border: 1px solid #333;
+    border: 3px solid lightgray;
     width: 80%;
     margin: 0 auto; 
     margin-top: 10px; 
@@ -239,7 +239,7 @@ a {
 
 #popup-box button {
     padding: 10px;
-    border: 1px solid #333;
+    border: 1px solid lightgray;
     cursor: pointer; 
 }
 
@@ -247,8 +247,11 @@ button {
     width: 150px; 
     border-radius: 10px; 
     background-color: #2989F7; 
+    color: white; 
     font-size: 20px; 
     margin: 0 auto; 
     display: block; 
 }
+
+hr { background-color: lightgray; height: 3px; border: 0; }
 /* ////// NEW */
