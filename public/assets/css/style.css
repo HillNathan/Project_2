@@ -229,7 +229,7 @@ a {
     color: black;
     width: 90%;
     max-width: 600px;
-    padding: 40px;
+    padding: 20px;
     border: 10px solid lightgray;
     border-radius: 10px;
     display: none;
@@ -427,3 +427,89 @@ label {
     font-size: 50px; 
     font-weight: bold; 
 }
+
+
+/* // contact pug page  */
+
+.swipe {
+    position: relative;
+    text-align: center;
+    height: 3em;
+  }
+  .swipe .sentence {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+    color: transparent;
+  }
+  .swipe .sentence .line-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    color: transparent;
+    transition: color 1ms;
+    transition-delay: 500ms;
+  }
+  .swipe .sentence .line-wrap:nth-child(2) {
+    transition-delay: 666.6666666667ms;
+  }
+  .swipe .sentence .line-wrap:nth-child(3) {
+    transition-delay: 833.3333333333ms;
+  }
+  .swipe .sentence .line-wrap:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #EBE8E1;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  .swipe .sentence--show {
+    z-index: 2;
+  }
+  .swipe .sentence--show .line-wrap {
+    color: #333;
+  }
+  .swipe .sentence--show .line-wrap:after {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    transition: -webkit-transform 1000ms ease-in-out;
+    transition: transform 1000ms ease-in-out;
+    transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+  }
+  .swipe .sentence--show .line-wrap:nth-child(2):after {
+    transition-delay: 166.6666666667ms;
+  }
+  .swipe .sentence--show .line-wrap:nth-child(3):after {
+    transition-delay: 333.3333333333ms;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+  }
+  
+  .sig {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* // contact pug page */
+  
