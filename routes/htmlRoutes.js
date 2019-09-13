@@ -42,6 +42,10 @@ module.exports = app => {
     res.render("user");
   });
 
+  app.get("/contact", (req, res) => {
+    res.render("contact");
+  });
+
   // Load example page and pass in an example by id
   app.get("/list", isAuthenticated, (req, res) => {
     res.send("list");
